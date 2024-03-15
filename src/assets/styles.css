@@ -63,9 +63,8 @@ p{
 }
 
 .section-nav{
-    margin: 20px;
     display: flex;
-    justify-content: center;
+    align-items: center; /* Align items vertically */
 }
 
 .section-container{
@@ -75,25 +74,154 @@ p{
 }
 
 .section{
-    margin: 10px;
-    width: 90%;
-    height: 500px;
-    border: 1px solid var(--dn-grey);
-    border-radius: 6px;
+    width: 100%; /* Set the width to 100% */
+    margin: 0 40px; /* Set wide margins */
 }
 
 .nav-link{
-    width:70px;
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 6px;
-    display:flex;
-    align-items: center;
-    text-decoration: none;
+    margin-bottom: 10px; /* Add some space between buttons */
 }
 
 .section-title{
     margin: 30px;
     letter-spacing: 5px;
     font-size: 20px;
+}
+
+.fixed-width-table {
+    width: 500px; /* or any other fixed width */
+    table-layout: fixed; /* Set table layout to fixed */
+}
+
+.fixed-width-table td {
+    word-wrap: break-word; /* Allow words to break and wrap */
+    overflow-wrap: break-word; /* Alternative for older browsers */
+}
+
+.file-input-table {
+    width: 100%;
+}
+
+.submit-cell {
+    text-align: center;
+}
+
+#dataTable {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders for better appearance */
+    margin-top: 200px; /* Adjust top margin to move the table down */
+}
+
+#dataTable th, #dataTable td {
+    padding: 8px; /* Add padding for better spacing */
+    border: 1px solid #ddd; /* Add borders for table cells */
+}
+
+#dataTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Apply grey background color to even rows */
+}
+
+.file-loader-label {
+    display: block;
+    margin-bottom: 5px; /* Add space between label and button */
+}
+
+.file-input-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.file-input {
+    width: 100%; /* Make file input take full width */
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-label {
+    margin-top: 5px; /* Add space between button and label */
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.file-label:hover {
+    background-color: #e0e0e0;
+}
+
+.section-nav-file-load {
+    position: absolute;
+    top: 10px; /* Adjust top positioning as needed */
+    left: 10px; /* Adjust left positioning to move the button to the left */
+}
+
+.welcome-back-label {
+    display: block;
+    margin-bottom: 5px; /* Add some space between the label and the back button */
+    text-align: center;
+}
+
+.editable-cell {
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-weight: bold; /* Add font weight */
+    width: 200px; /* Set width of each cell */
+    height: 40px; /* Set height of each cell */
+    text-align: center; /* Center text horizontally */
+    vertical-align: middle; /* Center text vertically */
+}
+
+.editable-cell:focus {
+    outline: none;
+    border-color: blue;
+}
+
+.editable-cell:hover {
+    background-color: #f0f0f0;
+}
+
+#file-preview {
+    position: absolute; /* Set the positioning to absolute */
+    top: 20px; /* Adjust top positioning */
+    right: 20px; /* Adjust right positioning */
+}
+
+.section-nav-job-view{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+}
+
+.button-stack {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    margin-right: 110px; /* Add spacing between buttons and user photo */
+}
+
+.button-stack a {
+    margin-bottom: 5px; /* Add spacing between buttons */
+    /* Add other button styles as needed */
+}
+
+.section-nav img {
+    width: 100px; /* Adjust photo width as needed */
+    height: 50px; /* Adjust photo height as needed */
+    margin-left: 10px; /* Add spacing between buttons and photo */
+}
+
+.welcome-message {
+    flex-grow: 1; /* Allow message to expand and center */
+    text-align: center; /* Center text horizontally */
+    margin: 0 20px; /* Add spacing around the message */
+}
+
+.section-nav-right{
+    display: flex;
+    align-items: flex-end; /* Align items to the right */
+    flex-direction: column; /* Stack buttons vertically */
 }
